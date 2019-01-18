@@ -25,6 +25,9 @@ namespace Aurora.Profiles
         //TODO: Add NotifyPropertyChanged to properties
         public string[] ProcessNames { get; set; }
 
+        /// <summary>One or more REGULAR EXPRESSIONS that can be used to match the title of an application</summary>
+        public string[] ProcessTitles { get; set; }
+
         public string Name { get; set; }
 
         public string ID { get; set; }
@@ -196,6 +199,19 @@ namespace Aurora.Profiles
             SaveProfiles();
 
             SwitchToProfile(_newProfile);
+        }
+
+        public ApplicationProfile AddNewProfile(String profileName)
+        {
+            ApplicationProfile _newProfile = CreateNewProfile(profileName);
+
+            Profiles.Add(_newProfile);
+
+            SaveProfiles();
+
+            SwitchToProfile(_newProfile);
+
+            return _newProfile;
         }
 
         public void DeleteProfile(ApplicationProfile profile)
