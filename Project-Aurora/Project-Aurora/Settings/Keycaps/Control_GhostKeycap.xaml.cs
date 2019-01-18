@@ -56,8 +56,7 @@ namespace Aurora.Settings.Keycaps
             {
                 keyCap.Text = key.visualName;
                 keyCap.Tag = key.tag;
-                if (key.font_size != null)
-                    keyCap.FontSize = key.font_size.Value;
+                keyCap.FontSize = key.font_size.Value;
             }
             else
             {

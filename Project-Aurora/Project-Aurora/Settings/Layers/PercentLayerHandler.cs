@@ -30,7 +30,6 @@ namespace Aurora.Settings.Layers
         [JsonIgnore]
         public bool BlinkDirection { get { return Logic._BlinkDirection ?? _BlinkDirection ?? false; } }
 
-        [JsonIgnore]
         public bool BlinkBackground { get { return Logic._BlinkBackground ?? _BlinkBackground ?? false; } }
 
         public string _VariablePath { get; set; }

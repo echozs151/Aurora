@@ -120,7 +120,7 @@ namespace Aurora.Settings
 
     public enum AppExitMode
     {
-        [Description("Always Ask")]
+        [Description("Let user decide to minimize or exit")]
         Ask = 0,
         [Description("Always Minimize")]
         Minimize = 1,
@@ -140,12 +140,6 @@ namespace Aurora.Settings
     {
         [Description("None")]
         None = 0,
-
-        [Description("Generic Laptop")]
-        GenericLaptop = 1,
-
-        [Description("Generic Laptop (Numpad)")]
-        GenericLaptopNumpad = 2,
         /*
         [Description("Logitech")]
         Logitech = 1,
@@ -181,8 +175,6 @@ namespace Aurora.Settings
         Corsair_STRAFE = 203,
         [Description("Corsair - K95 Platinum")]
         Corsair_K95_PL = 204,
-        [Description("Corsair - K68")]
-        Corsair_K68 = 205,
 
         //Razer range is 300-399
         [Description("Razer - Blackwidow")]
@@ -338,8 +330,6 @@ namespace Aurora.Settings
         public bool corsair_first_time;
         public bool razer_first_time;
         public bool steelseries_first_time;
-        public bool dualshock_first_time;
-        public bool roccat_first_time;
 
         //General Program Settings
         public bool allow_peripheral_devices;
@@ -427,7 +417,6 @@ namespace Aurora.Settings
             corsair_first_time = true;
             razer_first_time = true;
             steelseries_first_time = true;
-            dualshock_first_time = true;
 
             //General Program Settings
             allow_peripheral_devices = true;
@@ -452,8 +441,6 @@ namespace Aurora.Settings
             devices_disable_mouse = false;
             devices_disable_headset = false;
             devices_disabled = new HashSet<Type>();
-            devices_disabled.Add(typeof(Devices.Dualshock.DualshockDevice));
-            devices_disabled.Add(typeof(Devices.AtmoOrbDevice.AtmoOrbDevice));
             OverlaysInPreview = false;
 
             //Blackout and Night theme
@@ -464,7 +451,7 @@ namespace Aurora.Settings
             time_based_dimming_end_hour = 8;
             time_based_dimming_end_minute = 0;
 
-            nighttime_enabled = false;
+            nighttime_enabled = true;
             nighttime_start_hour = 20;
             nighttime_start_minute = 0;
             nighttime_end_hour = 7;
