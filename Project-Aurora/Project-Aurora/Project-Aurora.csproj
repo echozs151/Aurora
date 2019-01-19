@@ -401,6 +401,8 @@
       <DependentUpon>SteelSeriesInstallInstructions.xaml</DependentUpon>
     </Compile>
     <Compile Include="Devices\Wooting\WootingDevice.cs" />
+    <Compile Include="Devices\YeeLight\YeeLightAPI.cs" />
+    <Compile Include="Devices\YeeLight\YeeLightDevice.cs" />
     <Compile Include="EffectsEngine\Animations\AnimationEllipse.cs" />
     <Compile Include="EffectsEngine\Animations\AnimationFill.cs" />
     <Compile Include="EffectsEngine\Animations\AnimationFilledCircle.cs" />
