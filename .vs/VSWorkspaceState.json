@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Project-Aurora",
+    "\\Project-Aurora\\Project-Aurora",
+    "\\Project-Aurora\\Project-Aurora\\kb_layouts\\Extra Features"
   ],
-  "SelectedNode": "\\Installer",
+  "SelectedNode": "\\Project-Aurora\\Project-Aurora\\Project-Aurora.csproj",
   "PreviewInSolutionExplorer": false
 }
