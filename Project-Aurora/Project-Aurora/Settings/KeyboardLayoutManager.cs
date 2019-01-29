@@ -766,6 +766,9 @@ namespace Aurora.Settings
                     case PreferredMouse.Corsair_Katar:
                         mouse_feature_path = Path.Combine(layoutsPath, "Extra Features", "corsair_katar_features.json");
                         break;
+                    case PreferredMouse.Razer_DeathadderElite:
+                        mouse_feature_path = Path.Combine(layoutsPath, "Extra Features", "razer_deathadder_elite_features.json");
+                        break;
                     case PreferredMouse.Clevo_Touchpad:
                         mouse_feature_path = Path.Combine(layoutsPath, "Extra Features", "clevo_touchpad_features.json");
                         break;
