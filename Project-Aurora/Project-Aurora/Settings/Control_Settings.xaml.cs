@@ -143,6 +143,8 @@ namespace Aurora.Settings
             this.devices_disable_keyboard_lighting.IsChecked = Global.Configuration.devices_disable_keyboard;
             this.devices_disable_mouse_lighting.IsChecked = Global.Configuration.devices_disable_mouse;
             this.devices_disable_headset_lighting.IsChecked = Global.Configuration.devices_disable_headset;
+            this.devices_show_yeelight.IsChecked = Global.Configuration.devices_show_yeelight;
+
 
             this.updates_autocheck_on_start.IsChecked = Global.Configuration.updates_check_on_start_up;
         }
@@ -722,6 +724,17 @@ namespace Aurora.Settings
                 ConfigManager.Save(Global.Configuration);
 
                 Global.kbLayout.LoadBrandDefault();
+            }
+        }
+
+        private void devices_show_yeelight_Checked(object sender, RoutedEventArgs e)
+        {
+            if( IsLoaded && sender is CheckBox)
+            {
+                Global.Configuration.devices_show_yeelight = ((sender as CheckBox).IsChecked.HasValue) ? (sender as CheckBox).IsChecked.Value : false;
+                ConfigManager.Save(Global.Configuration);
+
+                Global.dev_manager.ResetDevices();
             }
         }
 
