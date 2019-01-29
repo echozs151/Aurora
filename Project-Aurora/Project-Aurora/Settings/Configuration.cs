@@ -387,6 +387,7 @@ namespace Aurora.Settings
         public KeycapType virtualkeyboard_keycap_type;
         public ApplicationDetectionMode detection_mode;
         public HashSet<String> excluded_programs;
+        public bool devices_show_yeelight;
         public bool devices_disable_keyboard;
         public bool devices_disable_mouse;
         public bool devices_disable_headset;
@@ -454,6 +455,7 @@ namespace Aurora.Settings
             detection_mode = ApplicationDetectionMode.WindowsEvents;
             excluded_programs = new HashSet<string>();
             //additional_profiles = new Dictionary<string, GenericApplicationProfileManager>();
+            devices_show_yeelight = false;
             devices_disable_keyboard = false;
             devices_disable_mouse = false;
             devices_disable_headset = false;
