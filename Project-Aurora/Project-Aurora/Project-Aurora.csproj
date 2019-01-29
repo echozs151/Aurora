@@ -958,6 +958,7 @@
     <None Include="kb_layouts\Extra Features\razer_blackwidow_left_bottom_features.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="kb_layouts\Extra Features\razer_deathadder_elite_features.json" />
     <None Include="kb_layouts\Extra Features\roccat_ryos_features.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -1325,6 +1326,7 @@
     <Resource Include="Resources\deadcells_128x128.png" />
     <Resource Include="Resources\Layers_Copy.png" />
     <Resource Include="Resources\Layers_Paste.png" />
+    <Content Include="kb_layouts\Extra Features\images\Razer_Deathadder_outline.png" />
     <Content Include="wooting-rgb-sdk.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

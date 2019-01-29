@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-Razer_Deathadder_outline",
+      "appliesTo": "Project-Aurora/Project-Aurora/kb_layouts/Extra Features/images/Razer_Deathadder_outline.png",
+      "type": "launch"
+    }
+  ]
+}
